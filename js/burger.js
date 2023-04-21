@@ -5,6 +5,6 @@ document.querySelector('.burger').addEventListener('click', (e) => {
     if (document.querySelector('.burger').classList.contains('active')) {
         document.querySelector('body').style.overflow = 'hidden';
     } else {
-        document.querySelector('body').style.overflow = 'vissible';
+        document.querySelector('body').style.overflow = 'visible';
     }
 })
