@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('../../fonts/avenirnextcyr-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../../fonts/avenirnextcyr-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../../fonts/avenirnextcyr-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../../fonts/avenirnextcyr-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../../fonts/avenirnextcyr-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../../fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+    font-weight: 400;
+}
+@font-face {
+	font-family: 'Avenir Next Demi';
+	src: url('../../fonts/avenirnextcyr-demi.eot'); /* IE 9 Compatibility Mode */
+	src: url('../../fonts/avenirnextcyr-demi.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../../fonts/avenirnextcyr-demi.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../../fonts/avenirnextcyr-demi.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../../fonts/avenirnextcyr-demi.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../../fonts/avenirnextcyr-demi.svg#avenirnextcyr-demi') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: local('Avenir Next Medium'), local('Avenir-Next-Medium'),
+        url('../../fonts/AvenirNextCyr-Medium.woff2') format('woff2'),
+        url('../../fonts/AvenirNextCyr-Medium.woff') format('woff'),
+        url('../../fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: local('Avenir Next Bold'), local('Avenir-Next-Bold'),
+        url('../../fonts/AvenirNextCyr-Bold.woff2') format('woff2'),
+        url('../../fonts/AvenirNextCyr-Bold.woff') format('woff'),
+        url('../../fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
