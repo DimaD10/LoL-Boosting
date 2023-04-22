@@ -199,7 +199,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__offer offer">
+            <div class="main__offer offer">
                 <div class="offer__container">
                     <div class="offer__box">
                         <p class="message">
@@ -213,6 +213,99 @@
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <section class="main__calculate calculate">
+                <div class="calculate__container">
+                    <div class="calculate__box">
+                        <div class="extra-options">
+                            <h2 class="extra-options__title">Extra Options</h2>
+                            <div class="extra-options__body options-tabs">
+                                <div class="options-tabs__navigation">
+                                    <div class="options-tabs__nav-wrapper">
+                                        <ul class="options-tabs__nav-list">
+                                            <li class="navigation-tab navigation-tab_current">
+                                                <span class="navigation-tab__label">free</span>
+                                                <span class="navigation-tab__title">
+                                                    FLASH POSITION
+                                                </span>
+                                            </li>
+                                            <li class="navigation-tab">
+                                                <span class="navigation-tab__label">FREE (OPTIONAL)</span>
+                                                <span class="navigation-tab__title">
+                                                    ROLES\CHAMPIONS
+                                                </span>
+                                            </li>
+                                            <li class="navigation-tab">
+                                                <span class="navigation-tab__title">
+                                                    OFFLINE MODE
+                                                </span>
+                                            </li>
+                                            <li class="navigation-tab">
+                                                <span class="navigation-tab__title">
+                                                    PRIORITY COMPLETION
+                                                </span>
+                                            </li>
+                                            <li class="navigation-tab">
+                                                <span class="navigation-tab__title">
+                                                    STREAM
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="options-content">
+                                    <section class="options-content__section options-content__section_showed">
+                                        <div class="options-content__header">
+                                            <h3 class="options-content__title">This option is <span class="green">FREE</span></h3>
+                                            <div class="activate-box"> 
+                                                <span class="activate-box__label">Activate:</span> 
+                                                <label class="activate-box__body"> 
+                                                    <input type="checkbox" id="checked_rol" name="checked_rol" value="1" checked> 
+                                                    <span class="activate-box__btn" id="off-btn">Off</span> 
+                                                    <span class="activate-box__btn" id="on-btn">On</span> 
+                                                </label> 
+                                            </div>
+                                        </div>
+                                        <div class="options-content__body">
+                                            <p class="options-content__paragraph">
+                                                You could choose your flash key through this option.
+                                            </p>
+                                            <p class="options-content__paragraph">
+                                                Did you see how sometimes players changes their flash key and trying to play with another one? No? Thats why thats pretty suspicious action so we provides this extra option for free! 🙂
+                                            </p>
+
+                                            <div class="choose-opt">
+                                                <input type="radio" id="f_opt" name="opt-choose">
+                                                <input type="radio" id="s_opt" name="opt-choose">
+
+                                                <label for="f_opt" class="choose-opt__item" id="f-label">
+                                                    <span>F</span>
+                                                    <div class="choose-opt__icon">
+                                                        <img src="./img/opt/icon1.png" alt="">
+                                                    </div>
+                                                    <div class="choose-opt__title"><span>- FLASH</span></div>
+                                                </label>
+                                                <label for="s_opt" class="choose-opt__item" id="s-label">
+                                                    <span>D</span>
+                                                    <div class="choose-opt__icon">
+                                                        <img src="./img/opt/icon1.png" alt="">
+                                                    </div>
+                                                    <div class="choose-opt__title"><span>- FLASH</span></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="options-content__section">Content 2</section>
+                                    <section class="options-content__section">Content 3</section>
+                                    <section class="options-content__section">Content 4</section>
+                                    <section class="options-content__section">Content 5</section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
@@ -220,5 +313,7 @@
     <script src="./js/spoiler.js"></script>
     <script src="./js/burger.js"></script>
     <script src="./js/select.js"></script>
+    <script src="./js/options.js"></script>
+    <script src="./js/opt-togler.js"></script>
 </body>
 </html>
