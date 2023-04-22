@@ -73,47 +73,47 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: "Avenir Next";
-  src: url("../../fonts/avenirnextcyr-regular.eot"); /* IE 9 Compatibility Mode */
-  src: url("../../fonts/avenirnextcyr-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/avenirnextcyr-regular.woff2") format("woff2"), url("../../fonts/avenirnextcyr-regular.woff") format("woff"), url("../../fonts/avenirnextcyr-regular.ttf") format("truetype"), url("../../fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular") format("svg"); /* Chrome < 4, Legacy iOS */
+  src: url("../fonts/avenirnextcyr-regular.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/avenirnextcyr-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnextcyr-regular.woff2") format("woff2"), url("../fonts/avenirnextcyr-regular.woff") format("woff"), url("../fonts/avenirnextcyr-regular.ttf") format("truetype"), url("../fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular") format("svg"); /* Chrome < 4, Legacy iOS */
   font-weight: 400;
 }
 @font-face {
   font-family: "Avenir Next Demi";
-  src: url("../../fonts/avenirnextcyr-demi.eot"); /* IE 9 Compatibility Mode */
-  src: url("../../fonts/avenirnextcyr-demi.eot?#iefix") format("embedded-opentype"), url("../../fonts/avenirnextcyr-demi.woff2") format("woff2"), url("../../fonts/avenirnextcyr-demi.woff") format("woff"), url("../../fonts/avenirnextcyr-demi.ttf") format("truetype"), url("../../fonts/avenirnextcyr-demi.svg#avenirnextcyr-demi") format("svg"); /* Chrome < 4, Legacy iOS */
+  src: url("../fonts/avenirnextcyr-demi.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/avenirnextcyr-demi.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnextcyr-demi.woff2") format("woff2"), url("../fonts/avenirnextcyr-demi.woff") format("woff"), url("../fonts/avenirnextcyr-demi.ttf") format("truetype"), url("../fonts/avenirnextcyr-demi.svg#avenirnextcyr-demi") format("svg"); /* Chrome < 4, Legacy iOS */
 }
 @font-face {
   font-family: "Avenir Next";
-  src: local("Avenir Next Medium"), local("Avenir-Next-Medium"), url("../../fonts/AvenirNextCyr-Medium.woff2") format("woff2"), url("../../fonts/AvenirNextCyr-Medium.woff") format("woff"), url("../../fonts/AvenirNextCyr-Medium.ttf") format("truetype");
+  src: local("Avenir Next Medium"), local("Avenir-Next-Medium"), url("../fonts/AvenirNextCyr-Medium.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Medium.woff") format("woff"), url("../fonts/AvenirNextCyr-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir Next";
-  src: local("Avenir Next Bold"), local("Avenir-Next-Bold"), url("../../fonts/AvenirNextCyr-Bold.woff2") format("woff2"), url("../../fonts/AvenirNextCyr-Bold.woff") format("woff"), url("../../fonts/AvenirNextCyr-Bold.ttf") format("truetype");
+  src: local("Avenir Next Bold"), local("Avenir-Next-Bold"), url("../fonts/AvenirNextCyr-Bold.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Bold.woff") format("woff"), url("../fonts/AvenirNextCyr-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir Next";
-  src: url("../../fonts/avenirnextcyr-regular.eot"); /* IE 9 Compatibility Mode */
-  src: url("../../fonts/avenirnextcyr-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/avenirnextcyr-regular.woff2") format("woff2"), url("../../fonts/avenirnextcyr-regular.woff") format("woff"), url("../../fonts/avenirnextcyr-regular.ttf") format("truetype"), url("../../fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular") format("svg"); /* Chrome < 4, Legacy iOS */
+  src: url("../fonts/avenirnextcyr-regular.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/avenirnextcyr-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnextcyr-regular.woff2") format("woff2"), url("../fonts/avenirnextcyr-regular.woff") format("woff"), url("../fonts/avenirnextcyr-regular.ttf") format("truetype"), url("../fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular") format("svg"); /* Chrome < 4, Legacy iOS */
   font-weight: 400;
 }
 @font-face {
   font-family: "Avenir Next Demi";
-  src: url("../../fonts/avenirnextcyr-demi.eot"); /* IE 9 Compatibility Mode */
-  src: url("../../fonts/avenirnextcyr-demi.eot?#iefix") format("embedded-opentype"), url("../../fonts/avenirnextcyr-demi.woff2") format("woff2"), url("../../fonts/avenirnextcyr-demi.woff") format("woff"), url("../../fonts/avenirnextcyr-demi.ttf") format("truetype"), url("../../fonts/avenirnextcyr-demi.svg#avenirnextcyr-demi") format("svg"); /* Chrome < 4, Legacy iOS */
+  src: url("../fonts/avenirnextcyr-demi.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/avenirnextcyr-demi.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnextcyr-demi.woff2") format("woff2"), url("../fonts/avenirnextcyr-demi.woff") format("woff"), url("../fonts/avenirnextcyr-demi.ttf") format("truetype"), url("../fonts/avenirnextcyr-demi.svg#avenirnextcyr-demi") format("svg"); /* Chrome < 4, Legacy iOS */
 }
 @font-face {
   font-family: "Avenir Next";
-  src: local("Avenir Next Medium"), local("Avenir-Next-Medium"), url("../../fonts/AvenirNextCyr-Medium.woff2") format("woff2"), url("../../fonts/AvenirNextCyr-Medium.woff") format("woff"), url("../../fonts/AvenirNextCyr-Medium.ttf") format("truetype");
+  src: local("Avenir Next Medium"), local("Avenir-Next-Medium"), url("../fonts/AvenirNextCyr-Medium.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Medium.woff") format("woff"), url("../fonts/AvenirNextCyr-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir Next";
-  src: local("Avenir Next Bold"), local("Avenir-Next-Bold"), url("../../fonts/AvenirNextCyr-Bold.woff2") format("woff2"), url("../../fonts/AvenirNextCyr-Bold.woff") format("woff"), url("../../fonts/AvenirNextCyr-Bold.ttf") format("truetype");
+  src: local("Avenir Next Bold"), local("Avenir-Next-Bold"), url("../fonts/AvenirNextCyr-Bold.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Bold.woff") format("woff"), url("../fonts/AvenirNextCyr-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -1459,29 +1459,9 @@ body {
 }
 
 .options-content {
-  padding: 5px 25px 30px 25px;
   overflow: hidden;
   position: relative;
-}
-@media (max-width: 1200px) {
-  .options-content {
-    padding-left: calc(20px + 5 * (100vw - 991.98px) / 208.02);
-    padding-right: calc(20px + 5 * (100vw - 991.98px) / 208.02);
-  }
-}
-@media (max-width: 991.98px) {
-  .options-content {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (max-width: 767.98px) {
-  .options-content {
-    padding-left: calc(15px + 5 * (100vw - 320px) / 447.98);
-    padding-right: calc(15px + 5 * (100vw - 320px) / 447.98);
-    padding-top: 0px;
-  }
+  width: 100%;
 }
 .options-content__section {
   opacity: 0;
@@ -1492,6 +1472,31 @@ body {
   transition: opacity ease-in-out 0.3s, transform ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s, transform ease-in-out 0.3s, -webkit-transform ease-in-out 0.3s;
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 25px 30px 25px;
+  pointer-events: none;
+}
+@media (max-width: 1200px) {
+  .options-content__section {
+    padding-left: calc(20px + 5 * (100vw - 991.98px) / 208.02);
+    padding-right: calc(20px + 5 * (100vw - 991.98px) / 208.02);
+  }
+}
+@media (max-width: 991.98px) {
+  .options-content__section {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .options-content__section {
+    padding-left: calc(15px + 5 * (100vw - 320px) / 447.98);
+    padding-right: calc(15px + 5 * (100vw - 320px) / 447.98);
+    padding-top: 0px;
+  }
 }
 .options-content__section_showed {
   opacity: 1;
@@ -1500,6 +1505,7 @@ body {
   position: static;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
+  pointer-events: all;
 }
 
 .options-content__header {
@@ -1538,8 +1544,19 @@ body {
     font-size: calc(20px + 4 * (100vw - 320px) / 447.98);
   }
 }
+.options-content__title:not(:first-child) {
+  margin-top: 20px;
+}
+.options-content__title_small {
+  text-transform: none;
+}
 .options-content__title .green {
   color: #15BE2B;
+}
+.options-content__title .purple {
+  color: #A92387;
+  font-family: Avenir Next;
+  font-weight: 600;
 }
 .options-content__body {
   padding-top: 40px;
@@ -1555,14 +1572,15 @@ body {
   font-size: 20px;
   line-height: 122%;
   color: #53228D;
+  margin-bottom: 1.5rem;
 }
 @media (max-width: 767.98px) {
   .options-content__paragraph {
     font-size: calc(18px + 2 * (100vw - 320px) / 447.98);
   }
 }
-.options-content__paragraph:not(:last-child) {
-  margin-bottom: 1.5rem;
+.options-content__paragraph_small {
+  max-width: 600px;
 }
 
 .activate-box {
@@ -1646,22 +1664,22 @@ body {
   opacity: 0;
 }
 
-#off-btn {
+.off-btn {
   background-color: #fff;
   color: #d60000;
 }
 
-#on-btn {
+.on-btn {
   background-color: #F1F1F1;
   color: #BFBFBF;
 }
 
-#checked_rol:checked ~ #on-btn {
+.activate-box__input:checked ~ .on-btn {
   background-color: #fff;
   color: #15BE2B;
 }
 
-#checked_rol:checked ~ #off-btn {
+.activate-box__input:checked ~ .off-btn {
   background-color: #F1F1F1;
   color: #BFBFBF;
 }
