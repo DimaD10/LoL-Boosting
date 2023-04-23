@@ -483,6 +483,21 @@
                                                 In case if you want us to play 1-5 champions please use Priority completion option.
                                             </p>
                                         </div>
+
+                                        <div class="options-content__header">
+                                            <h3 class="options-content__title">Champions:</h3>
+                                        </div>
+                                        <div class="champions">
+                                            <div class="champions__list general-champ-list">
+
+                                                <button class="champions__add-button">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path id="Line 4" d="M10 2V18" stroke="white" stroke-width="3" stroke-linecap="square"/>
+                                                        <path id="Line 4_2" d="M18 10L2 10" stroke="white" stroke-width="3" stroke-linecap="square"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </section>
                                     <section class="options-content__section">
                                         <div class="options-content__header">
@@ -546,6 +561,57 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="popup-champ">
+                    <div class="popup-champ__box">
+                        <div class="popup-champ__wrapper">
+                            <div class="popup-champ__header">
+                                <h2 class="popup-champ__title">Select Champion</h2>
+            
+                                <button class="close-btn">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path id="Line 4" d="M10 2V18" stroke="white" stroke-width="3" stroke-linecap="square"/>
+                                        <path id="Line 4_2" d="M18 10L2 10" stroke="white" stroke-width="3" stroke-linecap="square"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="popup-champ__body champions">
+                                <input type="text" class="popup-champ__search" placeholder="Champion name">
+            
+                                <div class="popup-champ__list">
+                                    <div class="popup-champ__list-wrapper">
+                                        <div class="champions__icon _current">
+                                            <img src="./img/champions/img1.png" alt="">
+                                        </div>
+                                        <div class="champions__icon">
+                                            <img src="./img/champions/img2.png" alt="">
+                                        </div>
+                                        <div class="champions__icon _current">
+                                            <img src="./img/champions/img3.png" alt="">
+                                        </div>
+                                        <div class="champions__icon _current">
+                                            <img src="./img/champions/img4.png" alt="">
+                                        </div>
+                                        <div class="champions__icon">
+                                            <img src="./img/champions/img5.png" alt="">
+                                        </div>
+                                        <div class="champions__icon _current">
+                                            <img src="./img/champions/img6.png" alt="">
+                                        </div>
+                                        <div class="champions__icon">
+                                            <img src="./img/champions/img7.png" alt="">
+                                        </div>
+                                        <div class="champions__icon">
+                                            <img src="./img/champions/img8.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <button class="popup-champ__confirm">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
@@ -555,5 +621,6 @@
     <script src="./js/select.js"></script>
     <script src="./js/options.js"></script>
     <script src="./js/opt-togler.js"></script>
+    <script src="./js/champs.js"></script>
 </body>
 </html>

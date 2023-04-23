@@ -19,6 +19,10 @@ body {
     flex-direction: column;
     background-color: #F1F1F1;
 }
+a, button, input, label {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .main {
     flex: 1 1 auto;
 }
