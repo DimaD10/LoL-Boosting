@@ -7,22 +7,36 @@ selectHeader.forEach(item => {
 });
 
 selectItem.forEach(item => {
-    item.addEventListener('click', selectChoose)
-});
+    item.addEventListener('click', (e) => {
+        let text = e.target.innerHTML,
+            select = e.target.closest('.select'),
+            currentText = select.querySelector('.select__current');
+        currentText.innerHTML = text;
+        select.classList.remove('is-active');
+
+        if (e.target.closest('.roles')) {
+            let position = e.target.closest('.roles__box');
+
+            let items = [...position.querySelectorAll('.select__item')];
+            let elPos = items.indexOf(e.target);
+    
+            showIcon(elPos, position);
+        }
+
+    });
+})
 
 function selectToggle() {
     this.parentElement.classList.toggle('is-active');
-    this.closest('.header-main-actions__el_select').classList.toggle("_active");
 }
 
-function selectChoose() {
-    let text = this.innerHTML,
-        select = this.closest('.select'),
-        icon = this.closest('.header-main-actions__el_select'),
-        currentText = select.querySelector('.select__current');
-    currentText.innerHTML = text;
-    select.classList.remove('is-active');
-    icon.classList.remove("_active");
+function showIcon(index, parent) {
+    let icons = parent.querySelectorAll('.roles__icon');
+    icons.forEach((el) => {
+        el.classList.remove('roles__icon_current');
+    });
+
+    icons[index].classList.add('roles__icon_current');
 }
 
 document.addEventListener('click', (e) => {
