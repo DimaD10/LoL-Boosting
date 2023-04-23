@@ -1847,8 +1847,12 @@
                 opacity: .7;
             }
             &:hover {
-                //transform: translateY(-2px);
+                transform: translateY(-2px);
             } 
+
+            img {
+                user-select: none;
+            }
         }
     }
     .champions__icon._current {
@@ -1890,5 +1894,13 @@
 
     .popup-champ__wrapper {
         transform: translateY(0);
+    }
+}
+.general-champ-list {
+    .champions__icon {
+        display: none;
+    }
+    .champions__icon._current {
+        display: block;
     }
 }

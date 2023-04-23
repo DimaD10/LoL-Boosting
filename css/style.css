@@ -2332,6 +2332,16 @@ a, button, input, label {
 .popup-champ .champions__icon::before {
   opacity: 0.7;
 }
+.popup-champ .champions__icon:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+.popup-champ .champions__icon img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
 .popup-champ .champions__icon._current::before {
   opacity: 0;
 }
@@ -2375,4 +2385,11 @@ a, button, input, label {
 .popup-champ.opened .popup-champ__wrapper {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.general-champ-list .champions__icon {
+  display: none;
+}
+.general-champ-list .champions__icon._current {
+  display: block;
 }
