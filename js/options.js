@@ -1,3 +1,16 @@
+let parent = document.querySelector('.options-tabs__nav-wrapper');
+let current = parent.querySelector('.select__current');
+
+parent.querySelectorAll('.select__item').forEach(el => {
+    if (current.innerHTML === el.innerHTML) {
+        parent.querySelectorAll('.select__item').forEach(el => {
+            el.classList.remove('_hide');
+        });
+
+        el.classList.add('_hide');
+    }
+})
+
 document.addEventListener('click', (e) => {
     if (e.target.classList.contains('navigation-tab')) {
         document.querySelectorAll('.navigation-tab').forEach((el) => {
