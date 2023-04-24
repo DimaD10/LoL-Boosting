@@ -20,7 +20,6 @@ document.addEventListener('click', (e) => {
         let items = document.querySelector('.tabs-select').querySelectorAll('.select__item');
         document.querySelector('.tabs-select').querySelector('.select__current').innerText = items[elPos].innerText;
 
-
         let parent = e.target.closest('.options-tabs__nav-wrapper');
         let current = parent.querySelector('.select__current');
         
