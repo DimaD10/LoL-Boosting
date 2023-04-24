@@ -16,5 +16,27 @@ document.addEventListener('click', (e) => {
 
         let contentSections = document.querySelectorAll('.options-content__section');
         contentSections[elPos].classList.add('options-content__section_showed');
+
+        let items = document.querySelector('.tabs-select').querySelectorAll('.select__item');
+        document.querySelector('.tabs-select').querySelector('.select__current').innerText = items[elPos].innerText;
+    }
+
+    if (e.target.classList.contains('select__item') && e.target.closest('.tabs-select')) {
+        let parent = e.target.closest('.tabs-select');
+
+        let tabs = [...parent.querySelectorAll('.select__item')]
+        let elPos = tabs.indexOf(e.target);
+
+        document.querySelectorAll('.options-content__section').forEach((el) => {
+            el.classList.remove('options-content__section_showed');
+        });
+
+        let contentSections = document.querySelectorAll('.options-content__section');
+        contentSections[elPos].classList.add('options-content__section_showed');
+
+        document.querySelectorAll('.navigation-tab').forEach((el) => {
+            el.classList.remove('navigation-tab_current');
+        });
+        document.querySelectorAll('.navigation-tab')[elPos].classList.add('navigation-tab_current');
     }
 })
