@@ -1696,7 +1696,7 @@
         padding: 0;
         background-color: #F1F1F1;
         border-radius: 2px;
-        top: 0;
+        //top: 0;
     }
     .select__item {
         width: 100%;
@@ -1719,6 +1719,9 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 130%;
+    }
+    .select__item._hide {
+        display: none;
     }
     
     .select.is-active {

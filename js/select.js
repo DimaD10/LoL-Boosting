@@ -46,6 +46,21 @@ selectItem.forEach(item => {
             showPreview(elPos, position);
             changeIcon(position);
         }
+
+        if (e.target.closest('.tabs-select')) {
+            let parent = e.target.closest('.tabs-select');
+            let current = parent.querySelector('.select__current');
+            
+            parent.querySelectorAll('.select__item').forEach(el => {
+                if (current.innerHTML === el.innerHTML) {
+                    parent.querySelectorAll('.select__item').forEach(el => {
+                        el.classList.remove('_hide');
+                    });
+
+                    el.classList.add('_hide');
+                }
+            })
+        }
     });
 })
 

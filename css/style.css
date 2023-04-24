@@ -2101,7 +2101,6 @@ input::-webkit-inner-spin-button {
   padding: 0;
   background-color: #F1F1F1;
   border-radius: 2px;
-  top: 0;
 }
 .tabs-select.select .select__item {
   width: 100%;
@@ -2126,6 +2125,9 @@ input::-webkit-inner-spin-button {
 }
 .tabs-select.select .select__item:hover {
   background-color: #f9f9f9;
+}
+.tabs-select.select .select__item._hide {
+  display: none;
 }
 .tabs-select.select .select.is-active {
   z-index: 100;
