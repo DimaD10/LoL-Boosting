@@ -218,7 +218,264 @@
             <section class="main__calculate calculate">
                 <div class="calculate__container">
                     <div class="calculate__box">
-                        <div class="extra-options">
+                        <div class="calculator">
+                            <div class="calculator__body">
+                                <div class="rank rank_first">
+                                    <div class="rank__preview">
+                                        <div class="rank__icon rank__icon_current">
+                                            <img src="./img/ranks/rank1.png" alt="">
+                                        </div>
+                                        <div class="rank__icon">
+                                            <img src="./img/ranks/rank2.png" alt="">
+                                        </div>
+                                        <div class="rank__icon">
+                                            <img src="./img/ranks/rank3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <span class="rank__label">Current Rank</span>
+
+                                    <div class="rank-nav">
+                                        <button class="rank-nav__btn rank-nav__btn_prev"></button>
+                                        <div class="rank-nav__select select">
+                                            <div class="select__header">
+                                                <div class="select__current">
+                                                    Gold
+                                                </div>
+                                                <div class="select__icon">
+                                                    <img src="./img/icons/triangle-p.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="select__body">
+                                                <div class="select__item">
+                                                    Gold
+                                                </div>
+                                                <div class="select__item">
+                                                    Ascendant
+                                                </div>                                                
+                                                <div class="select__item">
+                                                    Last rank
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="rank-nav__btn rank-nav__btn_next"></button>
+                                    </div>
+
+                                    <div class="rank__rr">
+                                        <input type="text" class="rank__input" value="100">
+                                        <label for="" class="rank__rr-label">RR</label>
+                                    </div>
+
+                                    <div class="rank-lp__select select">
+                                        <div class="select__header">
+                                            <div class="select__current">
+                                                0-19 LP
+                                            </div>
+                                            <div class="select__icon">
+                                                <img src="./img/icons/triangle-p.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="select__body">
+                                            <div class="select__item">
+                                                0-19 LP
+                                            </div>
+                                            <div class="select__item">
+                                                20-40 LP
+                                            </div>                                                
+                                            <div class="select__item">
+                                                41-60 LP
+                                            </div>
+                                            <div class="select__item">
+                                                61-80 LP
+                                            </div>
+                                            <div class="select__item">
+                                                61-80 LP
+                                            </div>
+                                            <div class="select__item">
+                                                81-99 LP
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rank rank_second">
+                                    <div class="rank__preview">
+                                        <div class="rank__icon">
+                                            <img src="./img/ranks/rank1.png" alt="">
+                                        </div>
+                                        <div class="rank__icon rank__icon_current">
+                                            <img src="./img/ranks/rank2.png" alt="">
+                                        </div>
+                                        <div class="rank__icon">
+                                            <img src="./img/ranks/rank3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <span class="rank__label">Desired Rank</span>
+
+                                    <div class="rank-nav">
+                                        <button class="rank-nav__btn rank-nav__btn_prev"></button>
+                                        <div class="rank-nav__select select">
+                                            <div class="select__header">
+                                                <div class="select__current">
+                                                    Ascendant
+                                                </div>
+                                                <div class="select__icon">
+                                                    <img src="./img/icons/triangle-p.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="select__body">
+                                                <div class="select__item">
+                                                    Gold
+                                                </div>
+                                                <div class="select__item">
+                                                    Ascendant
+                                                </div>                                                
+                                                <div class="select__item">
+                                                    Last rank
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="rank-nav__btn rank-nav__btn_next"></button>
+                                    </div>
+
+                                    <div class="rank-tiers">
+                                        <input type="radio" class="rank-tiers__input" name="tiers" id="tier1">
+                                        <input type="radio" class="rank-tiers__input" name="tiers" id="tier2" checked>
+                                        <input type="radio" class="rank-tiers__input" name="tiers" id="tier3">
+
+                                        <label for="tier1" class="rank-tiers__label" id="tier1-label">
+                                            1
+                                        </label>
+                                        <label for="tier2" class="rank-tiers__label" id="tier2-label">
+                                            2
+                                        </label>
+                                        <label for="tier3" class="rank-tiers__label" id="tier3-label">
+                                            3
+                                        </label>
+                                    </div>
+
+                                    <div class="server-select select">
+                                        <div class="select__header">
+                                            <div class="select__current">
+                                                North America
+                                            </div>
+                                            <div class="select__icon">
+                                                <img src="./img/icons/triangle-p.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="select__body">
+                                            <div class="select__item">
+                                                North America
+                                            </div>
+                                            <div class="select__item">
+                                                EU Nordic&East
+                                            </div>                                                
+                                            <div class="select__item">
+                                                North America
+                                            </div>
+                                            <div class="select__item">
+                                                Oceania
+                                            </div>
+                                            <div class="select__item">
+                                                Japan
+                                            </div>
+                                            <div class="select__item">
+                                                Garena
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-aside">
+                                <div class="calculator-aside__result calculate-result">
+                                    <div class="calculate-result__box calculate-result__box_first">
+                                    </div>
+                                    <div class="calculate-result__arrow">
+                                        <img src="./img/icons/arrow-right.svg" alt="">
+                                    </div>
+                                    <div class="calculate-result__box calculate-result__box_second">
+                                    </div>
+                                </div>
+
+                                <div class="calculator-aside__table table-aside">
+                                    <div class="table-aside__row">
+                                        <div class="table-aside__icon">
+                                            <img src="./img/icons/vpn.svg" alt="">
+                                        </div>
+                                        <span class="table-aside__title">VPN + Data Encyption</span>
+                                        <span class="table-aside__value table-aside__value_green">free</span>
+                                    </div>
+                                    <div class="table-aside__row">
+                                        <div class="table-aside__icon">
+                                            <img src="./img/icons/chat.svg" alt="">
+                                        </div>
+                                        <span class="table-aside__title"><span class="purple">Chat</span> With Booster</span>
+                                        <span class="table-aside__value table-aside__value_green">free</span>
+                                    </div>
+                                    <div class="table-aside__row">
+                                        <div class="table-aside__icon">
+                                            <img src="./img/icons/play.svg" alt="">
+                                        </div>
+                                        <span class="table-aside__title">Offline Mode</span>
+                                        <span class="table-aside__value table-aside__value_green">free</span>
+                                    </div>
+                                    <div class="table-aside__row">
+                                        <div class="table-aside__icon">
+                                            <img src="./img/icons/support.svg" alt="">
+                                        </div>
+                                        <span class="table-aside__title">Live Customer Support</span>
+                                        <span class="table-aside__value table-aside__value_green">free</span>
+                                    </div>
+                                    <div class="table-aside__row">
+                                        <div class="table-aside__icon">
+                                            <img src="./img/icons/percent.svg" alt="">
+                                        </div>
+                                        <span class="table-aside__title">Loyalty Program</span>
+                                        <span class="table-aside__value"><img src="./img/icons/bird.svg" alt="" class="table-aside__value-icon"></span>
+                                    </div>
+                                    <div class="table-aside__row">
+                                        <div class="table-aside__icon">
+                                            <img src="./img/icons/duo.svg" alt="">
+                                        </div>
+                                        <span class="table-aside__title">Duo Queue</span>
+                                        <span class="table-aside__value activate-box">
+                                            <label class="activate-box__body"> 
+                                                <input type="checkbox" class="activate-box__input" name="checked_rol" value="1" checked> 
+                                                <span class="activate-box__btn off-btn">Off</span> 
+                                                <span class="activate-box__btn on-btn">On</span> 
+                                            </label> 
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <a href="#extra-options" class="calculator-aside__link">
+                                    <span>Extra Options</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6C2 3.79086 3.79086 2 6 2Z" stroke="#53228D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9 13L12 16M12 16L15 13M12 16V8" stroke="#53228D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                </a>
+
+                                <div class="discount">
+                                    <input type="text" class="discount__input" placeholder="Discount code">
+                                    <span class="discount__percent">0%</span>
+                                    <button class="discount__button">Apply</button>
+                                </div>
+
+                                <div class="calculator-aside__bottom aside-final">
+                                    <div class="aside-final__label">
+                                        Approximate complection time: <span class="aside-final__label-value">12 - 24hours</span>
+                                    </div>
+
+                                    <div class="aside-price">
+                                        <div class="aside-price__label">Final price:</div>
+                                        <div class="aside-price__old-price">12.00$</div>
+                                        <div class="aside-price__price">15.00$</div>
+                                    </div>
+
+                                    <button class="calculator-aside__button">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="extra-options" id="extra-options">
                             <h2 class="extra-options__title">Extra Options</h2>
                             <div class="extra-options__body options-tabs">
                                 <div class="options-tabs__navigation">
@@ -622,5 +879,6 @@
     <script src="./js/options.js"></script>
     <script src="./js/opt-togler.js"></script>
     <script src="./js/champs.js"></script>
+    <script src="./js/rank-nav.js"></script>
 </body>
 </html>
