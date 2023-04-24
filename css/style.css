@@ -1301,6 +1301,8 @@ input::-webkit-inner-spin-button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   width: 420px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 @media (max-width: 991.98px) {
   .calculator-aside {
@@ -1342,6 +1344,7 @@ input::-webkit-inner-spin-button {
   font-family: Avenir Next Demi;
   text-transform: uppercase;
   font-size: 16px;
+  color: #53228D;
   -webkit-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
 }
@@ -2098,6 +2101,7 @@ input::-webkit-inner-spin-button {
   padding: 0;
   background-color: #F1F1F1;
   border-radius: 2px;
+  top: 0;
 }
 .tabs-select.select .select__item {
   width: 100%;
@@ -3372,7 +3376,6 @@ input::-webkit-inner-spin-button {
 }
 .calculate_amount .select {
   width: 100%;
-  max-width: 340px;
 }
 .calculate_amount .select__header {
   background-color: #F1F1F1;
@@ -3462,7 +3465,6 @@ input::-webkit-inner-spin-button {
 }
 .calculate_challenges .select {
   width: 100%;
-  max-width: 340px;
 }
 .calculate_challenges .select__header {
   background-color: #F1F1F1;
