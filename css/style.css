@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
@@ -208,11 +209,9 @@ a, button, input, label, .select__header, .select__icon {
 }
 
 .header {
-  background: url("../img/bg/header-bg.png") no-repeat 100%;
-  background-position: center top;
-  background-size: cover;
   color: #fff;
   z-index: 700;
+  position: relative;
 }
 .header__container {
   display: -webkit-box;
@@ -223,6 +222,33 @@ a, button, input, label, .select__header, .select__icon {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 1260px;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #130d0d;
+  z-index: -10;
+}
+.header__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.header__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .header-top {
@@ -3099,4 +3125,13 @@ a, button, input, label, .select__header, .select__icon {
   max-height: 290px;
   overflow: hidden;
   overflow-y: auto;
+}
+.select__body::-webkit-scrollbar { /* 1 - скроллбар */
+  width: 5px;
+  background-color: #ddd3e2;
+}
+.select__body::-webkit-scrollbar-thumb { /* 3 - трек */
+  border-radius: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A42689), to(#3F54B5));
+  background: linear-gradient(180deg, #A42689 0%, #3F54B5 100%);
 }
