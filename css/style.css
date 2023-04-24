@@ -1873,6 +1873,7 @@ a, button, input, label, .select__header, .select__icon {
   border-radius: 2px;
   color: #53228D;
   z-index: 5;
+  cursor: pointer;
   position: relative;
   -webkit-transition: color ease-in-out 0.3s;
   transition: color ease-in-out 0.3s;
@@ -1898,11 +1899,16 @@ a, button, input, label, .select__header, .select__icon {
   height: 100%;
   border-radius: 2px;
   background-color: #fff;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   z-index: -5;
 }
 .rank-tiers__label::before, .rank-tiers__label::after {
   -webkit-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
+}
+.rank-tiers__label:hover::after {
+  opacity: 0.8;
 }
 
 #tier1:checked ~ #tier1-label {

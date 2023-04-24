@@ -1497,6 +1497,7 @@
         //overflow: hidden;
         color: #53228D;
         z-index: 5;
+        cursor: pointer;
 
 
         position: relative;
@@ -1520,11 +1521,17 @@
             height: 100%;
             border-radius: 2px;
             background-color: #fff;
+            backdrop-filter: blur(4px);
             z-index: -5;
         }
 
         &::before, &::after {
             transition: opacity ease-in-out $animSpeed;
+        }
+        &:hover {
+            &::after {
+                opacity: .8;
+            }
         }
 
         transition: color ease-in-out $animSpeed;
