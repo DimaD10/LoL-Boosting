@@ -46,18 +46,20 @@
 }
 .header-top {
     z-index: 120;
+    min-height: 52px;
+    @media (max-width: 991.98px) {
+        min-height: calc(47px + (52 - 47) * ((100vw - 320px) / (991.98 - 320)));
+    }
+    display: flex;
+    align-items: center;
 
     // .header-top__fb
     &__fb {
         margin-right: auto;
 
         svg { 
-            width: 36px;
-            height: 36px;
-            @media (max-width: 767.98px) {
-                width: calc(28px + (36 - 28) * ((100vw - 320px) / (767.98 - 320)));
-                height: calc(28px + (36 - 28) * ((100vw - 320px) / (767.98 - 320)));
-            }
+            width: 22px;
+            height: 22px;
 
             path {
                 transition: fill ease-in-out $animSpeed;
@@ -233,6 +235,12 @@
     align-items: flex-start;
     gap: 10px;
     width: 100%;
+    padding: 15px;
+    @media (max-width: 1200px) {
+        padding-left: calc(8px + (15 - 8) * ((100vw - 320px) / (1200 - 320)));
+        padding-right: calc(8px + (15 - 8) * ((100vw - 320px) / (1200 - 320)));
+    }
+    border-top: 4px solid #a92387;
 
     // .member-form__field
     &__field {
@@ -245,7 +253,7 @@
     &__label {
         font-family: Avenir Next;
         font-family: 500;
-        font-size: 16px;
+        font-size: 17px;
         @media (max-width: 767.98px) {
             font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (767.98 - 320)));
         }
@@ -271,7 +279,7 @@
 
         font-family: Avenir Next;
         font-family: 400;
-        font-size: 14px;
+        font-size: 16px;
         color: $purple;
         transition: opacity ease-in-out $animSpeed;
 
@@ -461,9 +469,10 @@
 }
 .header-navigation {
     padding: 0 35px;
+    padding-right: 0;
     @media (max-width: 1200px) {
         padding-left: calc(14px + (35 - 14) * ((100vw - 991.98px) / (1200 - 991.98)));
-        padding-right: calc(14px + (35 - 14) * ((100vw - 991.98px) / (1200 - 991.98)));
+        //padding-right: calc(14px + (35 - 14) * ((100vw - 991.98px) / (1200 - 991.98)));
     }
     @media (max-width: 991.98px) {
         position: fixed;
@@ -490,6 +499,7 @@
     &__list {
         height: 100%;
         display: flex;
+        align-items: center;
         gap: 24px;
         @media (max-width: 1200px) {
             gap: calc(12px + (24 - 12) * ((100vw - 991.98px) / (1200 - 991.98)));
@@ -506,6 +516,7 @@
             transform: translateX(100%);
             transition: transform ease-in-out $animSpeed;
             transition-delay: .1s;
+            align-items: stretch;
         }
     }
     &__el {
@@ -521,42 +532,51 @@
         a {
             color: #fff;
             white-space: nowrap;
+            transition: color ease-in-out $animSpeed;
         }
         font-size: 18px;
-        line-height: 140%;
-        font-weight: 400;
+        line-height: 25px;
+        font-weight: 500;
         text-transform: uppercase;
-        padding: 0 4px;
+        padding: 10px 3px;
 
         position: relative;
         &::after {
             content: '';
             position: absolute;
-            width: 100%;
+            width: 0;
             height: 4px;
-            top: 100%;
-            left: 0;
+            bottom: 0;
+            left: 50%;
             background-color: $purple;
-            opacity: 0;
-            transform: translateY(4px);
             @media (max-width: 991.98px) {
                 top: 0;
                 left: auto;
                 right: 0;
                 height: 100%;
                 width: 4px;
-                //transform: translateX(4px);
+                transform: translateX(4px);
+                transform: translateX(0);
+                opacity: 0;
             }
 
-            transition: transform ease-in-out $animSpeed, opacity ease-in-out $animSpeed;
+            transition: width ease $animSpeed, left ease $animSpeed, transform ease $animSpeed, opacity ease $animSpeed;
         }
 
         &:hover{ 
+            a {
+                color: #a92387;
+            }
             &::after {
                 opacity: 1;
-                transform: translateY(0);
+                left: 0;
+                width: 100%;
                 @media (max-width: 991.98px) {
                     transform: translateX(0);
+                    width: 4px;
+                    left: auto;
+                    right: 0;
+                    opacity: 1;
                 }
             }
         }
@@ -564,11 +584,18 @@
         &_current {
             font-weight: 700;
             pointer-events: none;
+            a {
+                color: #a92387;
+            }
             &::after {
-                opacity: 1;
-                transform: translateY(0);
+                left: 0;
+                width: 100%;
                 @media (max-width: 991.98px) {
                     transform: translateX(0);
+                    width: 4px;
+                    left: auto;
+                    right: 0;
+                    opacity: 1;
                 }
             }
         }
